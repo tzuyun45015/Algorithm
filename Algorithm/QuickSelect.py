@@ -1,8 +1,17 @@
+# leetcode#215 kth largest element in an array
+# MaxHeap O(n) + klogn
+# Worst O(n2) nums.sort()
+        #return nums[len(nums)-k]
+# AVE QuickSelect O(n)
+# set a pivot
+
+
 def quickSelect(l,r):
             pivot, p = nums[r], l
             for i in range(l,r):
                 if nums[i] <= pivot:
-                    nums[i], nums[p] = nums[p], nums[i]
+                        # smaller than pivot swap to right index
+                    nums[i], nums[p] = nums[p], nums[i] #in place partition
                     p += 1
             nums[r], nums[p] = nums[p], nums[r]
 
