@@ -5,14 +5,14 @@ class Solution:
         #breadth first search
         #queue: first in first out
         res = []
-        q = collections.deque()
+        q = collections.deque() #create queue
         q.append(root)
 
         while q:
             qlen = len(q)
             level = []
             for i in range(qlen):
-                node = q.popleft()
+                node = q.popleft() #first in first out
                 if node:
                     level.append(node.val)
                     q.append(node.left)
