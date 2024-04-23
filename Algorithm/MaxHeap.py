@@ -1,5 +1,6 @@
 # python dont have maxheap, use minheap instead
 # convert each value into negative
+# time O(nlogn)
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
         stone = [-s for s in stones] 
