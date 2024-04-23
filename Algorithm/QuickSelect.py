@@ -19,3 +19,11 @@ def quickSelect(l,r):
             elif p < k: return quickSelect(p+1, r)
             else: return nums[p]
         return quickSelect(0,len(nums)-1)
+
+## maxHeap
+        heapq.heapify(nums)
+        for i in range(len(nums)-k):
+            heapq.heappop(nums)
+
+        return nums[0]
+
