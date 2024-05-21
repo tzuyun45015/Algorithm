@@ -1,3 +1,4 @@
+sys.setrecursionlimit(1000000) # dfs loop out of time limit
 def queensAttack(n, k, r_q, c_q, obstacles):
     # Write your code here
     obs = set() #obstacles
