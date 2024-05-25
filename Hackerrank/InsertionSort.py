@@ -13,7 +13,6 @@ def insertionSort1(n, arr):
 
 def insertionSort2(n, arr):
     # Write your code here
-    l, r = 0, 0
     for i in range(1,n):
         tmp = arr[i]
         index = i
